@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import SchemaBuilder from '@xrenders/schema-builder';
 
 function App() {
+  useEffect(() => {
+    let iframes = document.getElementsByTagName('iframe');
+    if (iframes.length > 1) {
+      iframes[0].height = 0
+    }
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: '100vh' }}>
+      <SchemaBuilder importBtn={true} exportBtn={true} pubBtn={false} />
     </div>
   );
 }

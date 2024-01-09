@@ -1,23 +1,97 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*.class
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# log
+log/
+logs/
+stats/
 
-# testing
-/coverage
+# Build results
+[Tt]arget/
+[Bb]uild/
+[Oo]utput/
 
-# production
-/build
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
-# misc
+# Package Files #
+
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# mac
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# windows
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# node
+node_modules/
+
+# typings
+typings/
+
+# gradle
+.gradletasknamecache
+.gradle/
+build/
+bin/
+
+
+# IntelliJ IDEA
+.idea/
+.idea_modules/
+*.iml
+*.idea
+*.ipr
+*.iws
+.classpath
+.project
+.settings
+classes
+out/
+
+*.lock
+*.log
+
+# VS
+obj/
+# .vscode/
+
+uploads
+uploads/
+upload-dir
+upload-dir/
+
+coverage
+coverage/
+
+.nyc_output/
+
+undefinedtmp/
